@@ -9,7 +9,7 @@
     position: sticky;
     z-index: 99;
 
-    &__item{
+    &__item {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,6 +17,10 @@
         min-width: 100px;
 
         cursor: pointer;
+    }
+
+    &__items {
+        display: flex;
     }
 
     &__item--active{
@@ -27,14 +31,19 @@
     }
 
 
-    &__left-header{
+    &__left-header {
         display: flex;
         flex-direction: row;
         align-items: center;
 
-        img{
+        img {
+            flex: 1;
             width: 24px;
             padding: 0 20px;
+        }
+
+        h3 {
+            flex: 3;
         }
     }
 
@@ -103,5 +112,12 @@
             width: 32px;
             padding: 10px;
         }
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+    .header {
+      display: block;
     }
 }

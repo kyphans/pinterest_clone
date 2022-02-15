@@ -43,6 +43,9 @@ function Header(props) {
         <div className={styles['header']}>
             <div className={styles['header__left-header']}>
                 <img src={logo} alt="logo" />
+                {/* <div className={styles['header__items']}>
+                   
+                </div> */}
                 <h3 className={`${styles['header__item']} ${styles['header__item--active']}`}>Trang chủ</h3>
                 <h3 className={styles['header__item']}>Theo dõi</h3>
             </div>

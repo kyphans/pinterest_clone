@@ -13,10 +13,9 @@ function Mainboard(props) {
     console.log('pins from mainboard:', pins)
     return (
         <div className={styles.Wrapper}>
-            <div className={styles.Container}>
+            <div className={`${styles['Container']} ${styles['mainboard_container']}`}>
                 {pins.map((pin, index) => {
-                    let { urls } = pin
-                    let { alt_description } = pin
+                    const { urls, alt_description } = pin
                     return <Pin
                         key={index}
                         urls={urls}

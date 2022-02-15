@@ -8,8 +8,7 @@ index.propTypes = {
 
 function index(props) {
 
-    const { urls } = props
-    const { alt_description } = props
+    const { urls, alt_description } = props
 
     return (
         <div className={styles.Wrapper}>

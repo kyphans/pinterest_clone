@@ -44,8 +44,9 @@ function App() {
     })
   }
 
-  const handleFilterChange = (value) => {
+  const handleSearchChange = (value) => {
     console.log('Search: ', value.searchTerm);
+
     if (value.searchTerm) {
       getImages(value.searchTerm).then(res => {
         let results = res.data.results
@@ -65,12 +66,12 @@ function App() {
     }
   }
 
-  // handleFilterChange("bali")
+  // handleSearchChange("bali")
 
   return (
     <div className="App">
       <Header
-        onSubmit={handleFilterChange}
+        onSubmit={handleSearchChange}
       />
       <Mainboard
         pins={pins}
