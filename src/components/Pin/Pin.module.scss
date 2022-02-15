@@ -1,0 +1,30 @@
+.Wrapper{
+    display: inline-flex;
+    padding: 8px;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 236px;
+    overflow: hidden;
+    border-radius: 16px;
+
+
+    img{
+        display: flex;
+        width: 100%;
+        cursor: zoom-in;
+        object-fit: cover;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+        border-radius: 16px;
+        transition: .3s ease-in-out;
+        opacity: 0.9;
+    }
+}
+

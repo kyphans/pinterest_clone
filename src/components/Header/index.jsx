@@ -3,7 +3,7 @@ import logo from '../../assets/Pinterest.png'
 import bell from '../../assets/bell.png'
 import chat from '../../assets/chat.png'
 import user from '../../assets/user.png'
-import './Header.scss';
+import styles from './Header.module.scss';
 import PropTypes from 'prop-types';
 
 Header.propTypes = {
@@ -40,13 +40,13 @@ function Header(props) {
     }
 
     return (
-        <div className="header">
-            <div className="header__left-header">
+        <div className={styles['header']}>
+            <div className={styles['header__left-header']}>
                 <img src={logo} alt="logo" />
-                <h3 className="header__item header__item--active">Trang chủ</h3>
-                <h3 className="header__item ">Theo dõi</h3>
+                <h3 className={`${styles['header__item']} ${styles['header__item--active']}`}>Trang chủ</h3>
+                <h3 className={styles['header__item']}>Theo dõi</h3>
             </div>
-            <div className="header__middle-header">
+            <div className={styles['header__middle-header']}>
                 <form>
                     <input
                         type="text"
@@ -57,7 +57,7 @@ function Header(props) {
                     {/* <button type="submit"></button> */}
                 </form>
             </div>
-            <div className="header__right-header">
+            <div className={styles['header__right-header']}>
                 <img src={bell} alt="bell" />
                 <img src={chat} alt="chat" />
                 <img src={user} alt="user" />
