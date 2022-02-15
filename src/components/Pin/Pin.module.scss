@@ -20,7 +20,7 @@
         object-fit: cover;
     }
 
-    img:hover{
+    img:hover, img:active {
         transform: scale(1.1);
         border-radius: 16px;
         transition: .3s ease-in-out;
